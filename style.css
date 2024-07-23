@@ -1,0 +1,182 @@
+/*NEW*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* menu styling */
+
+body {
+    font-family: Arial, sans-serif;
+}
+.menu {
+    display:flex;
+    list-style-type:none;
+    background-color: #313030;
+    padding: 0;
+}
+.menu li {
+    padding: 13px 20px;
+}
+.menu li a {
+    color: white;
+    text-decoration:none;
+}
+.menu li:hover {
+    background-color: #111;
+}
+
+
+
+/* Container styling */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+ 
+.container .logo, 
+.container .button1, 
+.container .button2, 
+.container .text2, 
+.container .text3, 
+.container .text4 {
+    position: absolute;
+}
+
+/* Image styling */
+.container img, 
+.downtown img, 
+.statue img, 
+.timessquare img {
+    width: 100%;
+    display: block;
+}
+
+/* Text styling */
+
+
+.container .logo {
+    mix-blend-mode: multiply;
+    width: 10%;   
+    left: 47%;
+    top: 1%;
+}
+
+.container .text2 {
+    color: rgb(0, 0, 0);
+    left: 41%;
+    top: 14%;
+    font-size: 300%;
+    font-style: normal;
+    font-variant-caps: small-caps;
+}
+
+.container .text3 {
+    color: rgb(7, 7, 7);
+    left: 48%;
+    top: 24%;
+    font-size: 700%;
+    font-style: normal;
+}
+
+.container .text4 {
+    color: rgb(7, 7, 7);
+    left: 49%;
+    top: 42%;
+    font-size: 500%;
+    font-style: normal;
+}
+
+/* Button styling */
+.container .button1 {
+    width: 10%;   
+    left: 34%;
+    top: 71%;
+}
+
+.container .button2 {
+    width: 10%;   
+    right: 34%;
+    top: 71%;
+}
+
+/* Hover effects */
+.container .logo:hover,
+.container .text:hover, 
+.container .text3:hover, 
+.container .text4:hover {
+    opacity: 20%;
+}
+
+.container .button1:hover,
+.container .button2:hover {
+    background-color: #9c9b9b;
+    transition: 1s;
+    height: 50px;
+}
+
+/* design for media  */
+@media (max-width: 768px) {
+    .container .text {
+        text-align: center;
+    }
+    .container .logo, 
+    .container .button1, 
+    .container .button2, 
+    .container .text2, 
+    .container .text3, 
+    .container .text4 {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .text2 {
+        font-size: 200%;
+    }
+    .container .text3 {
+        font-size: 500%;
+    }
+    .container .text4 {
+        font-size: 300%;
+    }
+}
+
+/* Footer styling */
+.footer P{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.designer {
+    opacity: 0.7;
+}
+
+
+/* for resume.html image */
+
+.dataimageResume img{
+    width: 50%;
+}
